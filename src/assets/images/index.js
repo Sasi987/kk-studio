@@ -1,3 +1,6 @@
+import heroDesktop from "../hero/hero-desktop.svg";
+import heroMobile from "../hero/hero-mobile.svg";
+
 /**
  * Image helper — builds responsive Pexels CDN URLs.
  * All images are royalty-free stock photography used as studio sample imagery.
@@ -7,8 +10,8 @@ export const px = (id, w = 1200) =>
 
 export const IMAGES = {
   hero: {
-    desktop: px(17657612, 1920),
-    mobile: px(35069916, 900),
+    desktop: heroDesktop,
+    mobile: heroMobile,
     alt: "Couple embracing in traditional wedding attire during an outdoor ceremony",
   },
   about: px(7014436, 1200),

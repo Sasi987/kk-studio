@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Wedding photography portrait</title>
+  <desc id="desc">A warm portrait composition of a couple in an open landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#666d7c"/>
+      <stop offset=".52" stop-color="#c39775"/>
+      <stop offset="1" stop-color="#282526"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="62%" cy="37%" r="28%">
+      <stop stop-color="#f7d79e" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#f7d79e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <rect width="900" height="1200" fill="url(#sun)"/>
+  <path d="M0 780c143-73 233-39 365-78 152-45 279 34 535-60v558H0Z" fill="#393630"/>
+  <path d="M0 950c170-76 337-42 469-98 179-76 288-31 431-74v422H0Z" fill="#1b1a19"/>
+  <g fill="#111111">
+    <path d="M250 1200c-4-194 21-321 104-438 69 69 87 165 75 286l-6 152Z"/>
+    <path d="M430 1200c24-193 20-337-17-430 111 15 183 119 199 254l16 176Z"/>
+    <path d="M320 708c-7-59 23-103 73-105 53-2 83 42 73 105-10 66-134 67-146 0Z"/>
+    <path d="M519 747c-8-55 18-94 64-96 46-2 76 39 68 96-8 58-121 60-132 0Z"/>
+  </g>
+  <path d="M332 808c53 58 120 64 185 12" fill="none" stroke="#efe6d4" stroke-width="10" opacity=".72"/>
+</svg>
