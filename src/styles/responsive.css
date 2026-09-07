@@ -1,0 +1,352 @@
+/* ------------------------------------------------------------------
+   LARGE DESKTOP 1440px+
+------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .container {
+    width: min(100% - 5rem, 1400px);
+  }
+  .container--wide {
+    width: min(100% - 5rem, 1700px);
+  }
+}
+
+/* ------------------------------------------------------------------
+   TABLET & BELOW  (≤ 1023px)
+------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  :root {
+    --nav-h: 68px;
+  }
+
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  .intro__grid,
+  .about-preview__grid,
+  .studio__grid,
+  .location__grid,
+  .contact__grid,
+  .booking__grid,
+  .wedding__head,
+  .gallery__statement {
+    grid-template-columns: 1fr;
+  }
+
+  .studio__media,
+  .booking__aside {
+    position: static;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-card,
+  .service-card--wide {
+    grid-column: span 3;
+  }
+
+  .service-card--large {
+    grid-column: span 6;
+  }
+
+  .portraits__strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-values,
+  .process {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .masonry {
+    columns: 2;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews__box {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding__collage {
+    grid-auto-rows: 84px;
+  }
+}
+
+/* ------------------------------------------------------------------
+   MOBILE  (≤ 767px)
+------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .container,
+  .container--wide {
+    width: min(100% - 2.5rem, 100%);
+  }
+
+  .section {
+    padding-block: 4rem;
+  }
+
+  .section--tight {
+    padding-block: 3rem;
+  }
+
+  /* room for the fixed bottom bar so it never covers the footer */
+  .site {
+    padding-bottom: calc(var(--bottombar-h) + env(safe-area-inset-bottom));
+  }
+
+  .bottom-bar {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .grid-2,
+  .form__row,
+  .about-preview__list,
+  .about-list,
+  .contact__actions,
+  .gallery__spread,
+  .packages-grid,
+  .portraits__strip,
+  .about-values,
+  .process,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .service-card--wide,
+  .service-card--large {
+    grid-column: auto;
+  }
+
+  .service-card .frame,
+  .service-card--large .frame,
+  .service-card--wide .frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  .service-card .frame.frame--landscape,
+  .service-card--large .frame.frame--landscape,
+  .service-card--wide .frame.frame--landscape {
+    aspect-ratio: 3 / 2;
+  }
+
+  .portraits__item:nth-child(even) {
+    padding-top: 0;
+  }
+
+  .masonry {
+    columns: 2;
+    column-gap: 0.75rem;
+  }
+
+  .masonry__item {
+    margin-bottom: 0.75rem;
+  }
+
+  .masonry--single-mobile {
+    columns: 1;
+  }
+
+  .masonry__caption {
+    display: none;
+  }
+
+  .wedding__collage {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 0.75rem;
+  }
+
+  .wedding__tile {
+    grid-column: span 1;
+    grid-row: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .wedding__tile--1,
+  .wedding__tile--6 {
+    grid-column: span 2;
+    aspect-ratio: 3 / 2;
+  }
+
+  .hero {
+    padding-bottom: 4.5rem;
+    padding-top: calc(var(--nav-h) + 2rem);
+  }
+
+  .hero__media img {
+    object-position: center 22%;
+  }
+
+  .hero__content {
+    gap: 1.75rem;
+  }
+
+  .hero__bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__meta {
+    gap: 1.25rem;
+  }
+
+  .intro__display span:nth-child(3) {
+    font-style: normal;
+  }
+
+  .studio__row {
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .studio__row-link {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0.5rem;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .lightbox {
+    padding: 0.75rem;
+  }
+
+  .lightbox__prev,
+  .lightbox__next {
+    top: auto;
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+    transform: none;
+  }
+
+  .lightbox__prev {
+    left: 1rem;
+  }
+
+  .lightbox__next {
+    right: 1rem;
+  }
+
+  .lightbox__img {
+    max-height: calc(100vh - 190px);
+  }
+
+  .lightbox__caption {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+
+  .page-header--image {
+    min-height: 62vh;
+  }
+
+  .gallery__feature .frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  .reviews__actions {
+    grid-auto-flow: row;
+  }
+
+  .booking-cta__actions,
+  .location__actions,
+  .portraits__foot,
+  .form__success-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .booking-cta__actions .btn,
+  .location__actions .btn,
+  .form__success-actions .btn {
+    width: 100%;
+  }
+
+  .row-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .marquee-line {
+    gap: 1rem 1.5rem;
+    font-size: 0.58rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   SMALL PHONES (≤ 374px)
+------------------------------------------------------------------- */
+@media (max-width: 374px) {
+  .nav__inner {
+    gap: 0.75rem;
+  }
+
+  .nav__brand {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+  }
+
+  .btn {
+    padding: 0 1.4rem;
+    letter-spacing: 0.2em;
+  }
+
+  .bottom-bar__item {
+    letter-spacing: 0.18em;
+  }
+}
+
+/* ------------------------------------------------------------------
+   REDUCED MOTION
+------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
